@@ -53,7 +53,7 @@ def turn(board)
      input_to_index(user_input)
 
 #this is the problem spot ****
-     
+
   if valid_move?(board, index = 0) == true
      move(user_input, value)
      display_board(board)
