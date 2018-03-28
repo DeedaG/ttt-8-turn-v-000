@@ -52,7 +52,7 @@ def turn(board)
      user_input = gets.strip
      input_to_index(user_input)
 
-#this is the problem spot ****
+#this is the problem spot below ****
 
   if valid_move?(board, index = 0) == true
      move(user_input, value)
@@ -60,5 +60,8 @@ def turn(board)
   end
 
 #above is the problem spot****
+  else
+    until valid_move? == true
+      
 
 end
