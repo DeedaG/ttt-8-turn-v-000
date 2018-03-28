@@ -52,6 +52,7 @@ def turn(board)
      user_input = gets.strip
      input_to_index(user_input)
   if valid_move?(board, index) == true
+     index = user_input.to_i-1
      move(board, index, value)
      display_board(board)
   end
