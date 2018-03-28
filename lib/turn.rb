@@ -42,8 +42,8 @@ def input_to_index(user_input)
   index = user_input.to_i-1
 end
 
-def move(board, index, value = "X")
-  board[index] = value
+def move(board, index, a_value = "X")
+  board[index] = a_value
 end
 
 
@@ -55,7 +55,7 @@ def turn(board)
 #this is the problem spot below ****
 
   if valid_move?(board, index) == true
-     move(board, index, value)
+     move(board, index, a_value)
      display_board(board)
 
 #above is the problem spot****
