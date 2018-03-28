@@ -55,7 +55,7 @@ def turn(board)
 #this is the problem spot below ****
 
   if valid_move?(board, index) == true
-     move(user_input, value)
+     move(board, index, value)
      display_board(board)
 
 #above is the problem spot****
