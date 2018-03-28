@@ -50,14 +50,13 @@ end
 def turn(board)
      puts "Please enter 1-9:"
      user_input = gets.strip
-     input_to_index(user_input)
+     index = input_to_index(user_input)
 
 #this is the problem spot below ****
 
   if valid_move?(board, index = 0) == true
      move(user_input, value)
      display_board(board)
-  end
 
 #above is the problem spot****
   else
@@ -65,6 +64,6 @@ def turn(board)
       puts "Please enter 1-9:"
       user_input = gets.strip
       index = input_to_index(user_input)
-
+    end
   end
 end
